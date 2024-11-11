@@ -1,5 +1,8 @@
 def funcion(valor):
-    return (2/((valor)**2 - 4))
+    if valor != 2:
+        return (2/((valor)**2 - 4))
+    else:
+        print ("Imposible usar 2 para el calculo de funcion")
 
 def regla_trapezoidal_compuesta(limite_superior,limite_inferior,n):
     h=(limite_superior-limite_inferior)/n
